@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Yanone+Kaffeesatz:wght@600&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+/*
+#f1d18a yellow
+#f73859 red
+#232931 black
+#ededed white
+*/
+.main-container {
+  padding: 0;
+  margin: 0;
+  background: #232931;
+  height: 100vh;
+}
+
+.nav-bar {
+  position: sticky;
+}
+.selection {
+  user-select: none;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 11vh;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background: #f73859;
+}
+nav img.logo {
+  position: absolute;
+  left: 5rem;
+  height: 11vh;
+}
+nav ul {
+  display: flex;
+  padding-right: 150px;
+  gap: 80px;
+  list-style: none;
+}
+nav ul li a {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ededed;
+}
+nav ul li a:hover {
+  text-shadow: 0px 0px 10px black, 0 0 20px black, 0 0 30px black;
+  border-bottom: 1px solid #ededed;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  padding-top: 25px;
+  gap: 6px;
+  height: 50px;
+  width: 50px;
+}
+.line {
+  background-color: #232931;
+  height: 3px;
+  width: 40px;
+}
+.burger:hover .line {
+  box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+}
+.color-yellow {
+  position: absolute;
+  background-color: #f1d18a;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  z-index: -1;
+  top: 10px;
+  right: 10px;
+}
+.color-red {
+  background-color: #f73859;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 50px;
+}
+.sometext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome-text {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 7rem;
+}
+.welcome-text-child {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 5rem;
+}
+.something-cool {
+  position: absolute;
+  top: 340px;
+  background: url(images/ClipartKey_297295.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 40vh;
+  z-index: -1;
+}
+
+.container-child-one {
+  height: 100vh;
+  position: relative;
+  background: #f1d18a;
+}
+@media screen and (max-width: 1080px) {
+  nav ul {
+    gap: 40px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    padding-right: 50px;
+  }
+  .color-any {
+    height: 15rem;
+    width: 15rem;
+  }
+  .sometext {
+    padding-top: 50px;
+  }
+  .welcome-text {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+    font-size: 5rem;
+  }
+  .welcome-text-child {
+    font-family: "Shadows Into Light", cursive;
+    color: #ededed;
+    font-size: 2.8rem;
+  }
+  .something-cool {
+    top: 400px;
+  }
+}
