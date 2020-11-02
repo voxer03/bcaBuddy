@@ -97,6 +97,7 @@ nav ul li a:hover {
 }
 .welcome-text {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight:bolder;
   font-size: 7rem;
 }
 .welcome-text-child {
