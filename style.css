@@ -154,3 +154,14 @@ nav ul li a:hover {
     top: 400px;
   }
 }
+@media screen and (max-width: 320px) {
+  .sometext {
+    padding-top: 100px;
+  }
+  .welcome-text {
+    font-size: 3rem;
+  }
+  .welcome-text-child {
+    font-size: 2rem;
+  }
+}
