@@ -88,6 +88,7 @@ nav ul li a:hover {
   position: absolute;
   left: 10px;
   top: 50px;
+  z-index: -1;
 }
 .sometext {
   display: flex;
@@ -97,7 +98,7 @@ nav ul li a:hover {
 }
 .welcome-text {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight:bolder;
+  font-weight: bolder;
   font-size: 7rem;
 }
 .welcome-text-child {
@@ -115,9 +116,57 @@ nav ul li a:hover {
 }
 
 .container-child-one {
-  height: 100vh;
+  height: 60vh;
   position: relative;
   background: #f1d18a;
+}
+.title-one {
+  display: flex;
+  justify-content: center;
+  height: 12vh;
+  background: #f73859;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.title-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #232931;
+}
+.notice-points {
+  padding-top: 50px;
+  padding-left: 100px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td,
+th {
+  border: 1px solid #fac554;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ededed;
+}
+
+.container-child-two {
+  position: relative;
+  height: 60vh;
+  background: #232931;
+}
+.title-two {
+  display: flex;
+  justify-content: center;
+  height: 12vh;
+  background: #f73859;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 @media screen and (max-width: 1080px) {
   nav ul {
