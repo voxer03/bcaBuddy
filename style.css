@@ -154,7 +154,7 @@ nav ul li a:hover {
     top: 400px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .sometext {
     padding-top: 100px;
   }
