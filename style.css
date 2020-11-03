@@ -39,11 +39,15 @@ nav img.logo {
   height: 11vh;
 }
 nav ul {
+  position: absolute;
+  top: -30px;
+
   display: flex;
   padding-right: 150px;
   gap: 80px;
   list-style: none;
 }
+
 nav ul li a {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-decoration: none;
@@ -66,6 +70,7 @@ nav ul li a:hover {
   background-color: #232931;
   height: 3px;
   width: 40px;
+  transition: 0.5s;
 }
 .burger:hover .line {
   box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
@@ -278,9 +283,27 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 720px) {
-  nav ul {
-    display: none;
+  nav {
+    border-radius: 0px;
   }
+  nav ul {
+    background: #f73859;
+    top: 8vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: 0.5s ease-in-out;
+  }
+
+  nav ul li {
+    padding-left: 200px;
+    padding-top: 50px;
+  }
+
   .burger {
     display: flex;
     padding-right: 50px;
@@ -307,11 +330,6 @@ tr:nth-child(even) {
   }
 }
 @media screen and (max-width: 425px) {
-  nav {
-    position: fixed;
-    width: 100%;
-    height: 9vh;
-  }
   nav img.logo {
     left: 2rem;
     height: 9vh;
